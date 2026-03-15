@@ -1,170 +1,201 @@
-
 # StreamEarn
 
-**Programmable Real-Time Compensation for Creative Labor on Stellar.**
+**Programmable Real-Time Compensation for Creative Labor on Stellar**
 
-StreamEarn is a decentralized micro-task platform where writers, designers, video editors, and voice-over artists earn through real-time streaming payments using Soroban smart contracts on Stellar.
+StreamEarn is a decentralized micro-task platform where writers, designers, video editors, and voice-over artists earn **real-time streaming payments** using **Soroban smart contracts on Stellar**.
 
-Instead of waiting until a job is completed to get paid, freelancers earn continuously during verified work sessions through milestone-based escrow and per-minute payment release.
-
----
-
-## 🚨 Problem
-
-Traditional freelance platforms such as:
-
-* Fiverr
-* Upwork
-
-rely on centralized escrow systems and delayed payouts.
-
-Creative freelancers often face:
-
-* Payment delays
-* Escrow disputes
-* Client ghosting
-* Limited transparency
-* High withdrawal fees
-
-There is currently no programmable real-time compensation model for creative labor within the Stellar ecosystem.
+Instead of waiting until a job is completed to receive payment, freelancers earn **continuously during verified work sessions** through **milestone-based escrow and per-minute payment release**.
 
 ---
 
-## 💡 Solution
+#  Problem
 
-StreamEarn introduces:
+Traditional freelance platforms such as **Upwork** and **Fiverr** rely on centralized escrow systems and delayed payouts.
 
-* 🔒 Milestone-based escrow using Soroban smart contracts
-* ⏱ Per-minute streaming payments during active work sessions
-* 🌟 On-chain reputation scoring
-* ⚖ Dispute resolution with multi-signature approval
-* 💰 Real-time earnings dashboard
+Creative freelancers often experience:
 
-Funds are locked in escrow and streamed continuously while the freelancer works — creating transparency and reducing payment uncertainty.
+- Payment delays
+- Escrow disputes
+- Client ghosting
+- Platform withdrawal fees
+- Lack of payment transparency
+
+Even when work begins immediately, payment is often **locked until project completion**.
+
+There is currently **no decentralized protocol for real-time compensation of creative labor on Stellar.**
 
 ---
 
-## 🔗 Built on Stellar
+#  Solution
+
+StreamEarn introduces **programmable work agreements** where funds are **locked in escrow and streamed continuously while work is performed**.
+
+Core features include:
+
+-  **Milestone-based escrow contracts**
+-  **Per-minute streaming payments**
+-  **On-chain reputation scoring**
+-  **Multi-signature dispute resolution**
+-  **Real-time earnings dashboard**
+
+This model creates:
+
+- Immediate payment transparency
+- Reduced freelancer risk
+- Reduced client trust burden
+
+---
+
+#  Built on Stellar
 
 StreamEarn is powered by:
 
-* Stellar
-* Soroban smart contracts (Rust)
-* Low-cost USDC or XLM transactions
+- **Stellar Network**
+- **Soroban Smart Contracts (Rust)**
+- **USDC or XLM micropayments**
 
 Stellar enables:
 
-* Micro-transactions with minimal fees
-* Fast settlement finality
-* Programmable escrow logic
-* Transparent payment tracking
+- Ultra-low transaction fees
+- Fast settlement finality
+- Secure programmable contracts
+- Efficient micro-transactions
 
-Streaming compensation at a per-minute level would not be economically viable without Stellar’s low-fee infrastructure.
-
----
-
-## 🏗 Architecture
-
-### 1️⃣ Smart Contract Layer (Soroban / Rust)
-
-* Streaming Escrow Contract
-
-  * Lock funds
-  * Stream per-minute payments
-  * Pause / resume logic
-  * Cancel conditions
-  * Auto-close on milestone approval
-
-* Reputation Contract
-
-  * On-chain score updates
-  * Weighted by job value
-  * Dispute impact scoring
+Streaming payments **would not be economically feasible without Stellar’s low-fee architecture.**
 
 ---
 
-### 2️⃣ Backend (Node.js / Nest js)
+#  System Architecture
 
-* Task marketplace API
-* Work session tracking
-* Dispute case management
-* User profile management
-* Payment session monitoring
+##  Smart Contract Layer (Soroban / Rust)
 
----
+### Streaming Escrow Contract
 
-### 3️⃣ Frontend (React / Next.js)
+Responsible for:
 
-* Task browsing interface
-* Work session dashboard
-* Live earnings counter
-* Freelancer profile + reputation view
+- Locking job funds
+- Releasing payments per minute
+- Pausing/resuming work sessions
+- Handling cancellations
+- Finalizing milestones
 
----
+### Reputation Contract
 
-## 🎯 MVP Scope (Phase 1)
+Maintains freelancer and client reputation scores:
 
-The initial MVP will focus exclusively on creative micro-skills:
-
-* Writers
-* Video editors
-* Designers
-* Voice-over artists
-
-The goal is to validate streaming compensation mechanics before expanding to additional skill categories.
+- Job completion tracking
+- Weighted scoring by job value
+- Dispute penalty adjustments
 
 ---
 
-## 🛣 Roadmap
+## 2️  Backend Layer (Node.js / NestJS)
 
-### Phase 1 – Smart Contract Development
+Responsibilities include:
 
-* Implement streaming escrow logic
-* Add pause/resume functionality
-* Develop milestone validation
-* Create on-chain reputation system
-
-### Phase 2 – Backend Infrastructure
-
-* Task creation & matching API
-* Work session validation system
-* Dispute submission workflow
-
-### Phase 3 – Frontend MVP
-
-* Marketplace UI
-* Live earnings dashboard
-* Reputation display
-
-### Phase 4 – Beta Testing
-
-* Onboard early creative freelancers
-* Test streaming session mechanics
-* Collect feedback and iterate
+- Task marketplace API
+- Work session validation
+- Dispute management
+- User profile services
+- Smart contract interaction
 
 ---
 
-## 🤝 Contributing
+## 3️ Frontend Layer (React / Next.js)
+
+User interface features:
+
+- Task browsing marketplace
+- Work session dashboard
+- Live earnings counter
+- Reputation system display
+- Wallet integration
+
+---
+
+#  MVP Scope
+
+The MVP will initially support creative micro-tasks including:
+
+- Writers
+- Designers
+- Video editors
+- Voice-over artists
+
+The goal is to **validate real-time compensation mechanics** before expanding to other skill categories.
+
+---
+
+#  Development Roadmap
+
+## Phase 1 – Smart Contracts
+
+- Implement streaming escrow logic
+- Add pause/resume functionality
+- Milestone validation system
+- Reputation contract
+
+## Phase 2 – Backend Infrastructure
+
+- Task marketplace API
+- Work session validation
+- Dispute submission workflow
+- Smart contract interaction services
+
+## Phase 3 – Frontend MVP
+
+- Marketplace interface
+- Work session dashboard
+- Live earnings tracker
+- Reputation UI
+
+## Phase 4 – Beta Testing
+
+- Onboard early freelancers
+- Test streaming sessions
+- Iterate based on feedback
+
+---
+
+#  Future Features
+
+- AI work verification
+- Real-time productivity proofs
+- Decentralized arbitration courts
+- DAO governance
+- Multi-chain payment streaming
+
+---
+
+#  Contributing
 
 We welcome contributors across:
 
-* Soroban smart contracts
-* Backend development
-* Frontend development
-* Documentation
+- Soroban smart contracts
+- Backend development
+- Frontend development
+- Documentation
 
-Every issue includes:
+Before contributing:
 
-* Clear technical requirements
-* Acceptance criteria
-* Testing expectations
+1. Fork the repository
+2. Pick an issue labeled **good-first-issue**
+3. Submit a pull request
 
-New contributors start with labeled beginner issues before progressing to advanced tasks.
+All issues contain:
+
+- Technical requirements
+- Acceptance criteria
+- Implementation guidance
 
 ---
 
-## 🌍 Vision
+#  Vision
 
-StreamEarn aims to become the foundational real-time compensation protocol for creative labor on Stellar — enabling programmable, trust-minimized digital work agreements globally.
+StreamEarn aims to become the **foundational real-time compensation protocol for digital labor on Stellar**, enabling **trust-minimized global work agreements** and eliminating delayed freelancer payments.
 
+---
 
+#  License
+
+MIT License
