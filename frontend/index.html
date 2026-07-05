@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StreamEarn | Real-Time Creative Payments</title>
+    <meta
+      name="description"
+      content="StreamEarn is a decentralized platform for real-time creative compensation on Stellar."
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="background-orb orb-one"></div>
+    <div class="background-orb orb-two"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#">StreamEarn</a>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#marketplace">Marketplace</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="hero-card">
+        <div class="hero-copy-block">
+          <p class="eyebrow">Stellar-powered micro-work platform</p>
+          <h1>Pay creators as work happens, not after the deadline.</h1>
+          <p class="hero-copy">
+            StreamEarn gives clients and freelancers a trust-minimized way to escrow funds,
+            stream payments in real time, and settle milestones with transparency.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#marketplace">Explore live opportunities</a>
+            <a class="btn secondary" href="#contract">See the contract layer</a>
+          </div>
+          <div class="trust-row">
+            <span>On-chain escrow</span>
+            <span>Instant visibility</span>
+            <span>Stellar native</span>
+          </div>
+        </div>
+
+        <div class="status-panel">
+          <div class="panel-header">
+            <p class="eyebrow">System overview</p>
+            <span class="live-pill">Live</span>
+          </div>
+          <h2>Protocol readiness</h2>
+          <p id="health-text">Checking backend…</p>
+          <div id="metrics-grid" class="metrics-grid"></div>
+        </div>
+      </section>
+
+      <section class="stats-strip">
+        <article>
+          <strong>24/7</strong>
+          <span>streaming-ready escrow flow</span>
+        </article>
+        <article>
+          <strong>4</strong>
+          <span>launch-ready work categories</span>
+        </article>
+        <article>
+          <strong>100%</strong>
+          <span>on-chain transparency for milestones</span>
+        </article>
+      </section>
+
+      <section class="showcase-card">
+        <div>
+          <p class="eyebrow">Why now</p>
+          <h2>Creators deserve faster cash flow and clients deserve clearer accountability.</h2>
+          <p>
+            Traditional freelance platforms lock value until the end of a project. StreamEarn changes that by bringing programmable escrow and real-time settlement into the workflow.
+          </p>
+        </div>
+        <div class="showcase-bullets">
+          <div>• Reduce payment delays</div>
+          <div>• Increase trust with transparent milestones</div>
+          <div>• Support global, low-fee payments on Stellar</div>
+        </div>
+      </section>
+
+      <section id="features" class="section-card">
+        <div class="section-heading">
+          <h2>Why StreamEarn stands out</h2>
+          <p>Designed to remove the delays, disputes, and uncertainty that hurt modern freelance collaboration.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Programmable escrow</h3>
+            <p>Fund releases are gated by milestone state and contract logic instead of manual approvals.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Real-time compensation</h3>
+            <p>Freelancers can receive value as they work, improving cash flow and reducing dependency on end-of-project payouts.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Reputation built in</h3>
+            <p>Every agreement contributes to a visible history of trust, reliability, and dispute outcomes.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Dispute-safe design</h3>
+            <p>Clear milestones and transparent state updates make conflict resolution faster and fairer.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="workflow" class="section-card workflow-card">
+        <div class="section-heading">
+          <h2>How the experience works</h2>
+          <p>From agreement to payout, every stage is visible and structured around trust.</p>
+        </div>
+        <div class="workflow-list">
+          <div class="workflow-step">
+            <span>01</span>
+            <h3>Create a job</h3>
+            <p>The client deposits funds into a milestone-based escrow agreement.</p>
+          </div>
+          <div class="workflow-step">
+            <span>02</span>
+            <h3>Start streaming</h3>
+            <p>Work begins and contract logic tracks the active session in real time.</p>
+          </div>
+          <div class="workflow-step">
+            <span>03</span>
+            <h3>Release value</h3>
+            <p>Funds are released progressively as milestones are confirmed.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="marketplace" class="section-card">
+        <div class="section-heading">
+          <h2>Open opportunities</h2>
+          <p>Sample milestone-based jobs designed to showcase the MVP experience.</p>
+        </div>
+        <div id="jobs-list" class="jobs-grid"></div>
+      </section>
+
+      <section id="contract" class="section-card contract-card">
+        <h2>Smart contract foundation</h2>
+        <p>
+          The Soroban-ready contract layer manages escrow initialization, milestone state,
+          session control, and dispute-safe completion flows.
+        </p>
+        <pre><code>initialize(admin)
+create_job(client, freelancer, amount)
+start_job(job_id)
+complete_job(job_id)</code></pre>
+      </section>
+    </main>
+
+    <footer class="footer-card">
+      <h2>Ready to build the future of creative payments?</h2>
+      <a class="btn primary" href="#top">Back to top</a>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "streamearn",
+  "version": "1.0.0",
+  "private": true,
+  "description": "StreamEarn grant-ready starter with frontend, backend, and smart-contract scaffolding",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node backend/server.js"
+  }
+}
